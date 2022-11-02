@@ -1,0 +1,30 @@
+@font-face {
+    font-family: fontLogo;
+    src: url(../fonts/fontLogo.otf);
+}
+
+.letter{
+    font-family: fontLogo;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@font-face {
+    font-family: fontLogo2;
+    src: url(../fonts/EngraversGothic\ BT.ttf);
+}
+
+.portLetter{
+    font-family: fontLogo2;
+}   
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@font-face {
+    font-family: fontMenu;
+    src: url(../fonts/fontMenu1.ttf);
+}
+
+.menuItem {
+    font-family: fontMenu;
+}
