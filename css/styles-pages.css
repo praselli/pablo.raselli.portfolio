@@ -6,10 +6,10 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-image: url(../img/backgrounds/WallpaperDog-20496256.jpg);
-    background-size: 100vw 100vh;
-    overflow: hidden;
+    background-size: 100vw 100%;
+    overflow-x: hidden;
     background-repeat: no-repeat;
 }
 
@@ -44,47 +44,46 @@ body{
 
     display: grid;
     grid-template-columns: auto 280px auto;
-    grid-template-rows: 30px 380px auto;
+    grid-template-rows: auto 220px auto;
 }
 
 .formContact{
     width: 280px;
-    height: 380px;
+    height: 220px;
 
     grid-column-start: 2;
     grid-row-start: 2;
 
     display: grid;
     grid-template-columns: 280px;
-    grid-template-rows: 30px 10px 30px 10px auto 10px 30px;
+    grid-template-rows: 30px 10px 30px 10px 100px 10px 30px;
 }
 
 .inputName{
     grid-row-start: 1;
     border-radius: 10px;
-    box-shadow:  0px 0px 8px black;
+    background-color: rgba(255, 255, 255, 0);
     border: 1px rgba(0, 0, 0, 0.616) solid;
 }
 
 .inputEmail{
     grid-row-start: 3;
     border-radius: 10px;
-    box-shadow:  0px 0px 8px black;
+    background-color: rgba(255, 255, 255, 0);
     border: 1px rgba(0, 0, 0, 0.616) solid;
 }
 
 .textArea{
     grid-row-start: 5;
     border-radius: 10px;
-    box-shadow:  0px 0px 8px black;
+    background-color: rgba(255, 255, 255, 0);
     border: 1px rgba(0, 0, 0, 0.616) solid;
 }
 
 .inputButton{
     grid-row-start: 7;
     border-radius: 10px;
-    background-image: linear-gradient(5deg, #69ebf0, #34e952);
-    box-shadow:  0px 0px 8px black;
+    background-color: rgba(255, 255, 255, 0);
     border: 1px rgba(0, 0, 0, 0.616) solid;    
     font-weight: bold;
     color: #6d6b6b;
@@ -195,70 +194,247 @@ footer{
     filter: drop-shadow(0px 0px 10px #ffffffd7);
 }
 
-/* - - - - - - - - - - - - - - MAIN MENU - - - - - - - - - - - - - - - - */
 
-.mainMenuConteiner{
-    width: 100%;
-    height: 600px;
+/* TRAINING */
+
+.mastesBoxTraining{
+    width: 100vw;
+    height: 100vh;
+
+    grid-column-start: 2;
+    grid-row-start: 2;
 
     display: grid;
-    grid-template-columns: auto 280px auto;
-    grid-template-rows: auto 70px 70px 70px 70px 70px auto;
+    grid-template-columns: 5% 70px 20px 35% 10% 300px auto;
+    grid-template-rows: auto 70px 20px 70px 20px 70px 20px 70px 20px 70px 20px 70px 20px 70px 100px;
 }
 
-.menuItem{
-    font-family: fontMenu;
-    font-size: 70px;
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 10px #000000, 0px 0px 25px #0000007a,  0px 0px 60px #00000071;
-    text-decoration: none;
+.programsIcons{
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0px 0px 5px #000000d7);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
-.abouteMe{
+.iconExcel{
     grid-column-start: 2;
     grid-row-start: 2;
 }
 
-.training{
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-
-.experience{
+.iconWord{
     grid-column-start: 2;
     grid-row-start: 4;
 }
 
-.myWorks{
-    grid-column-start: 2;
-    grid-row-start: 5;
-}
-
-.contact{
+.iconVsCode{
     grid-column-start: 2;
     grid-row-start: 6;
 }
 
-
-/* - - - ANIMACION MENU - - - */
-
-.menuItem:hover{
-    font-size: 85px;
-    color: white;
-    text-shadow: 0px 0px 15px #000000, 0px 0px 35px #0000007a,  0px 0px 60px #ffffff,
-                 0px 0px 250px #00000071;
-    transition: 0.7s;
+.iconCorel{
+    grid-column-start: 2;
+    grid-row-start: 8;
 }
+
+.iconPhotoShop{
+    grid-column-start: 2;
+    grid-row-start: 10;
+}
+
+.iconAutoCad{
+    grid-column-start: 2;
+    grid-row-start: 12;
+}
+
+.iconSketchUp{
+    grid-column-start: 2;
+    grid-row-start: 14;
+}
+
+.programBar{
+    width: 100%;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.bar1{
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+
+.bar2{
+    grid-column-start: 6;
+    grid-row-start: 4;
+}
+
+.bar3{
+    grid-column-start: 6;
+    grid-row-start: 6;
+}
+
+.bar4{
+    grid-column-start: 6;
+    grid-row-start: 8;
+}
+
+.bar5{
+    grid-column-start: 6;
+    grid-row-start: 10;
+}
+
+.bar6{
+    grid-column-start: 6;
+    grid-row-start: 12;
+}
+
+.bar7{
+    grid-column-start: 6;
+    grid-row-start: 14;
+}
+
+.programTitle{
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.programText{
+    font-size: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.excelText{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.wordText{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.vsCodeText{
+    grid-column-start: 4;
+    grid-row-start: 6;
+}
+
+.corelText{
+    grid-column-start: 4;
+    grid-row-start: 8;
+}
+
+.photShopText{
+    grid-column-start: 4;
+    grid-row-start: 10;
+}
+
+.aCadText{
+    grid-column-start: 4;
+    grid-row-start: 12;
+}
+
+.sketchUpText{
+    grid-column-start: 4;
+    grid-row-start: 14;
+}
+
+/* - - - - - - - - - - - - - - MAIN MENU - - - - - - - - - - - - - - - - */
+
+.masterBoxMenu{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    grid-template-rows: auto 50px auto;
+}
+
+.mainMenuConteiner{
+    width: 600px;
+    height: 50px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 50px;
+}
+
+.menuItem{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menuLi{
+    list-style: none;
+    transition: 1s;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 3px #000000;
+}
+
+.mainMenuConteiner:hover .menuLi .menuItem {
+    transform: scale(1.05);
+    opacity: 0.8;
+    filter: blur(3px);
+    text-shadow: 0px 0px 4px #000000;
+}
+
+.mainMenuConteiner  .menuLi .menuItem:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    filter: blur(0px);
+    text-shadow: 0px 0px 3px #000000, 0px 0px 8px #fcfbfb;
+}
+
+.abouteMe{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.training{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+/*.contactMasterBox{
+    grid-column-start: 2;
+    grid-row-start: 4;
+}*/
+
+.myWorks{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.contact{
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
 
 /* - - - - - - - - - - - - MODO TABLETA / PC - - - - - - - - - - - - - - - */
 
 @media (min-width: 768px) {
 
-    .contactMasterBox{
+    .contactMasterBox{        
         grid-template-columns: auto 350px auto;
         grid-template-rows: 30px 420px auto;
     }
@@ -271,11 +447,7 @@ footer{
         grid-template-rows: 35px 12px 35px 12px auto 12px 35px;
     }
 
-    .headerAni{
-        display:block;
-    }
-
-    .mainMenuConteiner{
+    /*.mainMenuConteiner{
         grid-template-columns: auto 450px auto;
         grid-template-rows: auto 95px 95px 95px 95px 95px auto;
     }
@@ -287,7 +459,7 @@ footer{
     
     .menuItem:hover{
         font-size: 110px;
-    }
+    }*/
 
     .titleBox{
         margin: 20px;
@@ -318,7 +490,7 @@ footer{
     }
 
     .footerNavContainer{    
-        grid-template-columns: auto 100px 4px 100px 4px 100px 4px 100px 4px 100px 4px 100px 10px;
+        grid-template-columns: auto 100px 4px 100px 4px 100px 4px 100px 4px 100px 10px;
         position: relative;
     }
 
@@ -342,7 +514,7 @@ footer{
         grid-column-start: 5;
     }
 
-    .itemWExperience {
+    .itemMyWorks {
         display: block;
         grid-column-start: 6;
     }
@@ -352,7 +524,7 @@ footer{
         grid-column-start: 7;
     }
 
-    .itemMyWorks {
+    .itemContact {
         display: block;
         grid-column-start: 8;
     }
@@ -362,17 +534,7 @@ footer{
         grid-column-start: 9;
     }
 
-    .itemContact {
-        display: block;
-        grid-column-start: 10;
-    }
-
-    .space5 {
-        display: block;
-        grid-column-start: 11;
-    }
-
-    .itemMenu {grid-column-start: 12;}
+    .itemMenu {grid-column-start: 10;}
 
     .itemsMenuFooter{
         display: inline-block;
