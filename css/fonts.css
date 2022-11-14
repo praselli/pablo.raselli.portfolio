@@ -7,6 +7,10 @@
     font-family: fontLogo;
 }
 
+.title{
+    font-family: fontLogo;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 @font-face {
@@ -17,14 +21,3 @@
 .portLetter{
     font-family: fontLogo2;
 }   
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-/*@font-face {
-    font-family: fontMenu;
-    src: url(../fonts/fontMenu1.ttf);
-}
-
-.menuItem {
-    font-family: fontMenu;
-}*/

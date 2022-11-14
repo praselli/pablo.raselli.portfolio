@@ -9,6 +9,13 @@
 
     <link rel="shortcut icon" href="../img/LOGO 2.png" type="image/x-icon">
 
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
@@ -20,84 +27,93 @@
 
 <body>
     
-    <!-- TITULO DE PAGINA -->
+    <!-- HEADER NAV -->
 
-    <h1 class="title">ABOUTE ME</h1>
+    <header>
+  
+        <ul class="headerNavContainer">
+    
+            <li class="headerItems itemAbouteMe">
+                <a class="menuLink" href="../pages/aboutMe.html">About Me</a>
+            </li>
+    
+            <li class="headerItems space1">
+                <p>|</p>
+            </li>
+    
+            <li class="headerItems itemSkills">
+                <a class="menuLink" href="../pages/skills.html">Skills</a>
+            </li>
+    
+            <li class="headerItems space2">
+                <p>|</p>
+            </li>
+    
+            <li class="headerItems itemMyWorks">
+                <a class="menuLink" href="../pages/myWorks.html">My Works</a>
+            </li>
+    
+            <li class="headerItems space3">
+                <p>|</p>
+            </li>
+    
+            <li class="headerItems itemContact">
+                <a class="menuLink" href="../pages/contact.html">Contact</a>
+            </li>
+    
+            <li class="headerItems space4">
+                <p>|</p>
+            </li>
+    
+            <li class="nav-item dropdown itemNavHeader itemMenu">
+                <a class="nav-link dropdown-toggle menuLink" href="#" data-bs-toggle="dropdown" aria-expanded="false">MENU</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="aboutMe.html">Aboute Me</a></li>
+                    <li><a class="dropdown-item" href="skills.html">Skills</a></li>
+                    <li><a class="dropdown-item" href="myWorks.html">My Works</a></li>
+                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                    <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                </ul>
+            </li>
+    
+        </ul>
+    
+    </header>
 
     <!-- CONTENIDO PRINCIPAL -->
 
-    <div class="masterBox">
+    <div class="masterBoxAboutMe">
 
    
     </div>
 
-    <!-- FOOTER NAV -->
+    <!-- FOOTER -->
 
-    <footer>
-
-        <div class="socialMediaContainer">
-
-                <a href="#">
-                    <img class="footerIcom igIcom" src="../img/LogoIG.png" alt="logo instagram">
-                </a>
-
-                <a href="#">
-                    <img class="footerIcom wsIcom" src="../img/LogoWS.png" alt="logo wahtsapp">
-                </a>
-             
-                <a href="#">
-                    <img class="footerIcom mailIcom" src="../img/LogoMAIL.png" alt="logo mail">
-                </a>
-
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">Pablo Javier Raselli <br> All rights reserved</span>
         </div>
-
-        <ul class="footerNavContainer">
-
-            <li class="itemsMenuFooter itemAbouteMe">
-                <a class="itemsFooterMenu" href="../pages/aboutMe.html">About Me</a>
-            </li>
-
-            <li class="itemsMenuFooter space1">
-                <p>|</p>
-            </li>
-
-            <li class="itemsMenuFooter itemTraining">
-                <a class="itemsFooterMenu" href="../pages/training.html">Training</a>
-            </li>
-
-            <li class="itemsMenuFooter space2">
-                <p>|</p>
-            </li>
-
-            <li class="itemsMenuFooter itemMyWorks">
-                <a class="itemsFooterMenu" href="../pages/myWorks.html">My Works</a>
-            </li>
-
-            <li class="itemsMenuFooter space3">
-                <p>|</p>
-            </li>
-
-            <li class="itemsMenuFooter itemContact">
-                <a class="itemsFooterMenu" href="../pages/contact.html">Contact</a>
-            </li>
-
-            <li class="itemsMenuFooter space4">
-                <p>|</p>
-            </li>
-
-            <li class="nav-item dropdown itemNavFooter itemMenu">
-                <a class="nav-link dropdown-toggle itemsFooterMenu" href="#" data-bs-toggle="dropdown" aria-expanded="false">MENU</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="aboutMe.html">Aboute Me</a></li>
-                  <li><a class="dropdown-item" href="training.html">Training</a></li>
-                  <li><a class="dropdown-item" href="myWorks.html">My Works</a></li>
-                  <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                  <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-                </ul>
-              </li>
-
-        </ul>
-
+      
+        <div class="footerIconsContainer">
+    
+            <a href="#">
+                <img class="footerIcom igIcom" src="../img/LogoIG.png" alt="logo instagram">
+            </a>
+        
+            <a href="#">
+                <img class="footerIcom wsIcom" src="../img/LogoWS.png" alt="logo wahtsapp">
+            </a>
+                     
+            <a href="#">
+                <img class="footerIcom mailIcom" src="../img/LogoMAIL.png" alt="logo mail">
+            </a>
+        
+        </div>
+            
     </footer>
       
     <!-- JavaScript Bundle with Popper -->
