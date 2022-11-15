@@ -1,0 +1,278 @@
+
+/* - - - - - - - - - - - - - - - MOOD TABLET / PC - - - - - - - - - - - - - - - */
+
+@media (min-width: 768px) {
+
+    /* - - - - - - - INDEX - - - - - - - */
+  
+    .masterBoxIndex {
+      height: 100vh;
+      grid-template-columns: auto 600px auto;
+      grid-template-rows: auto 151px 50px auto;
+    }
+  
+    .mainConteiner {
+      width: 600px;
+      height: 142px;
+      grid-template-rows: 5px 97px 35px 5px;
+    }
+  
+    .lineTop, .lineDown {
+      display: none;
+      width: 276px;
+      height: 5px;
+    }
+  
+    .pabloRaselliConteiner {
+      width: 600px;
+      height: 97px;
+      grid-template-columns: auto 22px 22px 22px 11px 22px 11px 24px 22px 22px 22px 11px 11px 11px auto;
+    }
+  
+    .letter {
+      font-size: 63px;
+      margin-top: 17px;
+    }
+  
+    .portfolioBox {
+      width: 600px;
+      height: 35px;
+      grid-template-columns: auto 26px 26px 26px 26px 26px 26px 26px 26px 26px auto;
+    }
+  
+    .portLetter {
+      font-size: 29px;
+      transform: translateY(-25%);
+    }
+  
+    .refreshBox {
+      transform: translateY(-21%);
+    }
+  
+    .refresh {
+      width: 17px;
+      height: 17px;
+    }
+  
+    @keyframes lettersAni {
+      0% {
+        opacity: 0;
+        font-size: 97px;
+      }
+  
+      100% {
+        opacity: 1;
+        font-size: 63px;
+      }
+    }
+  
+    @keyframes lineTopAni {
+      0% {
+        width: 0px;
+        opacity: 1;
+      }
+  
+      100% {
+        width: 276px;
+        opacity: 1;
+      }
+    }
+  
+    @keyframes lineDownAni {
+      0% {
+        width: 0px;
+        opacity: 1;
+      }
+  
+      100% {
+        width: 276px;
+        opacity: 1;
+      }
+    }
+  
+    .mainMenuConteiner {
+      width: 600px;
+      height: 50px;
+      grid-column-start: 2;
+      grid-row-start: 3;
+      opacity: 0;
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px;
+      grid-template-rows: 50px;
+      animation-name: navAni;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-delay: 7s;
+    }
+  
+    @keyframes navAni {
+      0% {
+        opacity: 0;
+      }
+  
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    .abouteMe {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+  
+    .skills {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+  
+    .myWorks {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
+  
+    .contact {
+      grid-column-start: 4;
+      grid-row-start: 1;
+    }
+  
+    /* - - - - - - - HEADER MENU - - - - - - - */
+  
+    .headerNavContainer {
+      grid-template-columns: auto 100px 4px 100px 4px 100px 4px 100px 4px 100px 10px;
+      position: relative;
+    }
+  
+    .itemAbouteMe {
+      display: block;
+      grid-column-start: 2;
+    }
+  
+    .space1 {
+      display: block;
+      grid-column-start: 3;
+    }
+  
+    .itemSkills {
+      display: block;
+      grid-column-start: 4;
+    }
+  
+    .space2 {
+      display: block;
+      grid-column-start: 5;
+    }
+  
+    .itemMyWorks {
+      display: block;
+      grid-column-start: 6;
+    }
+  
+    .space3 {
+      display: block;
+      grid-column-start: 7;
+    }
+  
+    .itemContact {
+      display: block;
+      grid-column-start: 8;
+    }
+  
+    .space4 {
+      display: block;
+      grid-column-start: 9;
+    }
+  
+    .itemMenu {
+      grid-column-start: 10;
+    }
+  
+    .headerItems {
+      display: inline-block;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  
+    .headerNavContainer p {
+      color: white;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  
+    .menuLink {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+  
+      &:hover {
+        text-shadow: 0px 0px 2px #000000, 0px 0px 10px #ffffffd7;
+        color: white;
+      }
+    }
+  
+    /* - - - - - - - ABOUTE ME - - - - - - - */
+  
+    /* - - - - - - - SKILLS - - - - - - - */
+  
+    .mastesBoxSkills {
+      padding: 2em;
+    }
+  
+    .skillBox {
+      width: 90%;
+      padding: 2em;
+      grid-template-columns: 50% 50%;
+    }
+
+    .dividerLine{
+        grid-column: 1 / 3;
+      }
+  
+    /* - - - - - - - MY WORKS - - - - - - - */
+  
+    /* - - - - - - - CONTACT - - - - - - - */
+  
+    .formWrapper {
+      width: 90%;
+      padding: 1em;
+      display: grid;
+      grid-template-columns: 70% 30%;
+    }
+  
+    .contactInfo p {
+      display: block;
+    }
+  
+    .contactForm form textarea {
+      height: 8em;
+    }
+  
+    /* - - - - - - - FOOTER - - - - - - - */
+  
+    .footerIcom {
+      height: 20px;
+    }
+  
+    .footerIconsContainer {
+      display: inline;
+      width: 300px;
+      height: 40px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    .footerIcom:hover {
+      filter: drop-shadow(0px 0px 5px #ffffff);
+      height: 22px;
+    }
+  }

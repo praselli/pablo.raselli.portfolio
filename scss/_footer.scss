@@ -1,0 +1,23 @@
+
+/* - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - */
+
+.footerIconsContainer {
+    display: inline;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .footerIcom {
+    height: 20px;
+  
+    &:hover {
+      filter: drop-shadow(0px 0px 5px #8df33a);
+    }
+  }

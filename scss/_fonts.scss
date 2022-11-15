@@ -1,0 +1,20 @@
+
+/* - - - - - - - - - - - - - - - FONTS - - - - - - - - - - - - - - - */
+
+@font-face {
+    font-family: fontLogo;
+    src: url(../fonts/fontLogo.otf);
+  }
+  
+  .letter, .title {
+    font-family: fontLogo;
+  }
+  
+  @font-face {
+    font-family: fontLogo2;
+    src: url(../fonts/EngraversGothic\ BT.ttf);
+  }
+  
+  .portLetter {
+    font-family: fontLogo2;
+  }
