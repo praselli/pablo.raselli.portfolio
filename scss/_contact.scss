@@ -9,16 +9,17 @@
     justify-items: center;
   }
   
-  .contacTitle {
+  .pageTitle {
  
     span {
-      color: rgb(12, 192, 51);
-      text-shadow: 0px 0px 3px rgb(132, 221, 132);
+      color: rgb(22, 206, 46);
+      text-shadow: 0px 0px 3px rgb(255, 255, 255);
+      font-weight: bolder;
     }
   }
   
   .formWrapper {
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 1em;
     box-shadow: 0px 0px 15px rgba(8, 8, 8, 0.5);
     border-radius: 12px;

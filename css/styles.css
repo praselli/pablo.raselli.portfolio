@@ -40,6 +40,10 @@ body {
   grid-template-rows: auto 131px 180px auto;
 }
 
+.indexTitle {
+  color: rgba(255, 255, 255, 0);
+}
+
 .mainConteiner {
   width: 240px;
   height: 123px;
@@ -474,6 +478,12 @@ header {
   padding: 1em;
 }
 
+.pageTitle span {
+  color: rgb(22, 206, 46);
+  text-shadow: 0px 0px 3px rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
 /* - - - - - - - - - - - - - - - SKILLS - - - - - - - - - - - - - - - */
 .mastesBoxSkills {
   width: 100vw;
@@ -486,6 +496,14 @@ header {
 .skillHead {
   width: 100%;
   display: grid;
+}
+
+.skillsTitle {
+  grid-column: 1/2;
+}
+
+.subTitleSkills {
+  grid-column: 1/2;
 }
 
 .skillsTitle span {
@@ -641,10 +659,6 @@ header {
     width: 90%;
   }
 }
-.dividerLine {
-  grid-column: 1/3;
-}
-
 /* - - - - - - - - - - - - - - - MY WORKS - - - - - - - - - - - - - - - */
 .masterBoxMyWorks {
   width: 100vw;
@@ -656,6 +670,12 @@ header {
   background: none;
 }
 
+.pageTitle span {
+  color: rgb(22, 206, 46);
+  text-shadow: 0px 0px 3px rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
 /* - - - - - - - - - - - - - - - CONTACT - - - - - - - - - - - - - - - */
 .masterBoxContact {
   width: 100vw;
@@ -665,13 +685,14 @@ header {
   justify-items: center;
 }
 
-.contacTitle span {
-  color: rgb(12, 192, 51);
-  text-shadow: 0px 0px 3px rgb(132, 221, 132);
+.pageTitle span {
+  color: rgb(22, 206, 46);
+  text-shadow: 0px 0px 3px rgb(255, 255, 255);
+  font-weight: bolder;
 }
 
 .formWrapper {
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 1em;
   box-shadow: 0px 0px 15px rgba(8, 8, 8, 0.5);
   border-radius: 12px;
@@ -953,12 +974,18 @@ header {
   .mastesBoxSkills {
     padding: 2em;
   }
+  .skillsTitle {
+    grid-column: 1/3;
+  }
   .skillBox {
     width: 90%;
     padding: 2em;
     grid-template-columns: 50% 50%;
   }
   .dividerLine {
+    grid-column: 1/3;
+  }
+  .subTitleSkills {
     grid-column: 1/3;
   }
   /* - - - - - - - MY WORKS - - - - - - - */
@@ -997,7 +1024,7 @@ header {
   }
 }
 .subTitleSkills {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Quicksand", sans-serif;
   font-size: 28px;
   text-shadow: 0px 0px 3px rgb(190, 190, 190);
@@ -1006,7 +1033,7 @@ header {
 }
 
 .skillHead h2 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Quicksand", sans-serif;
   font-size: 28px;
   text-shadow: 0px 0px 3px rgb(190, 190, 190);
@@ -1014,16 +1041,7 @@ header {
   padding: 0;
 }
 
-.contacTitle {
-  font-family: "Quicksand", sans-serif;
-  text-align: left;
-  margin-bottom: 0.5em;
-  font-size: 3em;
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 3px rgb(190, 190, 190);
-}
-
-.skillsTitle {
+.pageTitle {
   font-family: "Quicksand", sans-serif;
   text-align: left;
   margin-bottom: 0.5em;

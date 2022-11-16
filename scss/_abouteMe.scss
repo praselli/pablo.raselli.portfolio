@@ -6,3 +6,12 @@
     height: 100vh;
     padding: 1em;
   }
+
+  .pageTitle {
+ 
+    span {
+      color: rgb(22, 206, 46);
+      text-shadow: 0px 0px 3px rgb(255, 255, 255);
+      font-weight: bolder;
+    }
+  }
