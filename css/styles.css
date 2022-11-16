@@ -423,6 +423,8 @@ header {
   background-color: rgba(5, 10, 22, 0.884);
   box-shadow: 2px 0px 15px black;
   top: 0;
+  position: sticky;
+  z-index: 1;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 40px;
@@ -646,7 +648,7 @@ header {
 /* - - - - - - - - - - - - - - - MY WORKS - - - - - - - - - - - - - - - */
 .masterBoxMyWorks {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 1em;
 }
 
@@ -960,6 +962,10 @@ header {
     grid-column: 1/3;
   }
   /* - - - - - - - MY WORKS - - - - - - - */
+  .masterBoxMyWorks {
+    width: 90%;
+    padding: 0;
+  }
   /* - - - - - - - CONTACT - - - - - - - */
   .formWrapper {
     width: 90%;
