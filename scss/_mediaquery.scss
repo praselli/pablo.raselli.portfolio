@@ -6,113 +6,30 @@
   /* - - - - - - - INDEX - - - - - - - */
 
   .masterBoxIndex {
+    width: 100vw;
     height: 100vh;
-    grid-template-columns: auto 600px auto;
-    grid-template-rows: auto 151px 50px auto;
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    grid-template-rows: auto 200px 90px auto;
   }
 
-  .mainConteiner {
-    width: 600px;
-    height: 142px;
-    grid-template-rows: 5px 97px 35px 5px;
+  .intro {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 29em;
+    margin-top: -1%;
   }
-
-  .lineTop, .lineDown {
-    display: none;
-    width: 276px;
-    height: 5px;
-  }
-
-  .pabloRaselliConteiner {
-    width: 600px;
-    height: 97px;
-    grid-template-columns: auto 22px 22px 22px 11px 22px 11px 24px 22px 22px 22px 11px 11px 11px auto;
-  }
-
-  .letter {
-    font-size: 63px;
-    margin-top: 17px;
-  }
-
-  .portfolioBox {
-    width: 600px;
-    height: 35px;
-    grid-template-columns: auto 26px 26px 26px 26px 26px 26px 26px 26px 26px auto;
-  }
-
-  .portLetter {
-    font-size: 29px;
-    transform: translateY(-25%);
-  }
-
-  .refreshBox {
-    transform: translateY(-21%);
-  }
-
-  .refresh {
-    width: 17px;
-    height: 17px;
-  }
-
-  @keyframes lettersAni {
-    0% {
-      opacity: 0;
-      font-size: 97px;
-    }
-
-    100% {
-      opacity: 1;
-      font-size: 63px;
-    }
-  }
-
-  @keyframes lineTopAni {
-    0% {
-      width: 0px;
-      opacity: 1;
-    }
-
-    100% {
-      width: 276px;
-      opacity: 1;
-    }
-  }
-
-  @keyframes lineDownAni {
-    0% {
-      width: 0px;
-      opacity: 1;
-    }
-
-    100% {
-      width: 276px;
-      opacity: 1;
-    }
-  }
-
+  
   .mainMenuConteiner {
     width: 600px;
     height: 50px;
-    grid-column-start: 2;
-    grid-row-start: 3;
-    opacity: 0;
-    display: grid;
     grid-template-columns: 150px 150px 150px 150px;
     grid-template-rows: 50px;
-    animation-name: navAni;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 7s;
-  }
+    left: 0;
+    right: 0;
+    margin: auto;
 
-  @keyframes navAni {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
+    margin-top: -5%;
   }
 
   .abouteMe {
@@ -272,7 +189,7 @@
   /* - - - - - - - FOOTER - - - - - - - */
 
   .footerIcom {
-    height: 20px;
+    height: 22px;
   }
 
   .footerIconsContainer {
@@ -285,7 +202,6 @@
   }
 
   .footerIcom:hover {
-    filter: drop-shadow(0px 0px 5px #ffffff);
-    height: 22px;
+    filter: drop-shadow(0px 0px 5px #a8a8a8);
   }
 }

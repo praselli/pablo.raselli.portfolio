@@ -4,329 +4,56 @@
 .masterBoxIndex {
     width: 100vw;
     height: 100vh;
-    position: relative;
-    display: grid;
-    grid-template-columns: auto 240px auto;
-    grid-template-rows: auto 131px 180px auto;
   }
 
 .indexTitle{
   color: rgba(255, 255, 255, 0);
 }
 
-  .mainConteiner {
-    width: 240px;
-    height: 123px;
-    position: absolute;
-    display: grid;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    grid-template-columns: auto;
-    grid-template-rows: 4px 85px 30px 4px;
+.intro {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 20em;
+  font-family: K2D;
+  letter-spacing: 0.02em;
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+}
+
+.introText {
+  fill: rgb(255, 255, 255);
+  stroke: rgb(255, 255, 255);
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 5s ease-out;
+  text-shadow: 0px 0px 13px black;
+
+}
+
+@keyframes stroke-offset {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 0;
+    stroke-dasharray: 0% 100%;
+    filter: blur(4px);
   }
-  
-  .lineTop {
-    width: 240px;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3px;
-    margin: 0 auto;
-    opacity: 0;
-    grid-column-start: 1;
-    grid-row-start: 1;
+  25% {
+    stroke-width: 2px;
   }
-  
-  .lineDown {
-    width: 240px;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3px;
-    margin: 0 auto;
-    opacity: 0;
-    grid-column-start: 1;
-    grid-row-start: 4;
+  50% {
+    fill-opacity: 0;
+    filter: blur(1px);
+    filter: blur(0px);
   }
-  
-  .pabloRaselliConteiner {
-    width: 240px;
-    height: 85px;
-    position: absolute;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    display: grid;
-    grid-template-columns: auto 19px 19px 19px 10px 19px 10px 21px 19px 19px 19px 10px 10px 10px auto;
+  75% {
+    stroke-width: 2px;
   }
-  
-  .letter {
-    color: white;
-    font-size: 55px;
-    text-align: center;
-    margin-top: 15px;
-    font-weight: bolder;
-    font-family: fontLogo;
-    opacity: 0;
-    text-shadow: 0px 0px 7px #000000, 0px 0px 10px #000000, 0px 0px 15px #ffffff7a,  0px 0px 60px #ffffff71;
+  100% {
+    stroke-width: 0;
   }
-  
-  .P1 {
-    grid-column-start: 2;
-  }
-  
-  .A1 {
-    grid-column-start: 3;
-  }
-  
-  .B {
-    grid-column-start: 4;
-  }
-  
-  .L1 {
-    grid-column-start: 5;
-  }
-  
-  .O1 {
-    grid-column-start: 6;
-  }
-  
-  .space {
-    grid-column-start: 7;
-  }
-  
-  .R1 {
-    grid-column-start: 8;
-  }
-  
-  .A2 {
-    grid-column-start: 9;
-  }
-  
-  .S {
-    grid-column-start: 10;
-  }
-  
-  .E {
-    grid-column-start: 11;
-  }
-  
-  .L2 {
-    grid-column-start: 12;
-  }
-  
-  .L3 {
-    grid-column-start: 13;
-  }
-  
-  .I1 {
-    grid-column-start: 14;
-  }
-  
-  .portfolioBox {
-    width: 240px;
-    height: 30px;
-    opacity: 0;
-    grid-column-start: 1;
-    grid-row-start: 3;
-    display: grid;
-    grid-template-columns: auto 23px 23px 23px 23px 23px 23px 23px 23px 23px auto;
-    grid-template-rows: 1fr;
-    animation-name: portfolioAni;
-    animation-duration: 3s;
-    animation-delay: 7s;
-    animation-fill-mode: forwards;
-  }
-  
-  .portLetter {
-    font-family: fontLogo2;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    text-align: center;
-    transform: translateY(-25%);
-    text-shadow: 0px 0px 4px black;
-  }
-  
-  .P2 {
-    grid-column-start: 2;
-  }
-  
-  .O2 {
-    grid-column-start: 3;
-  }
-  
-  .R2 {
-    grid-column-start: 4;
-  }
-  
-  .T {
-    grid-column-start: 5;
-  }
-  
-  .F {
-    grid-column-start: 6;
-  }
-  
-  .O3 {
-    grid-column-start: 7;
-  }
-  
-  .L4 {
-    grid-column-start: 8;
-  }
-  
-  .I2 {
-    grid-column-start: 9;
-  }
-  
-  .refreshBox {
-    grid-column-start: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-16%);
-  }
-  
-  .refresh {
-    width: 16px;
-    height: 16px;
-    filter: drop-shadow(0px 0px 3px black);
-    animation-name: refresAni;
-    animation-duration: 5s;
-    animation-delay: 11s;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes refresAni {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    10% {
-      transform: rotate(-180deg);
-    }
-  
-    20% {
-      transform: rotate(-360deg);
-    }
-  
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
-  
-  @keyframes portfolioAni {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .letter {
-    animation-name: lettersAni;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes lettersAni {
-    0% {
-      opacity: 0;
-      font-size: 85px;
-    }
-  
-    100% {
-      opacity: 1;
-      font-size: 55px;
-    }
-  }
-  
-  .P1 {
-    animation-delay: 1s;
-  }
-  
-  .A1 {
-    animation-delay: 1.5s;
-  }
-  
-  .B {
-    animation-delay: 2s;
-  }
-  
-  .L1 {
-    animation-delay: 2.5s;
-  }
-  
-  .O1 {
-    animation-delay: 3s;
-  }
-  
-  .R1 {
-    animation-delay: 3.8s;
-  }
-  
-  .A2 {
-    animation-delay: 4.3s;
-  }
-  
-  .S {
-    animation-delay: 4.8s;
-  }
-  
-  .E {
-    animation-delay: 5.3s;
-  }
-  
-  .L2 {
-    animation-delay: 5.8s;
-  }
-  
-  .L3 {
-    animation-delay: 6.3s;
-  }
-  
-  .I1 {
-    animation-delay: 6.8s;
-  }
-  
-  .lineTop {
-    animation-name: lineTopAni;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 6s;
-    box-shadow: 0px 0px 7px #000000, 0px 0px 30px #ffffff71;
-  }
-  
-  @keyframes lineTopAni {
-    0% {
-      width: 0px;
-      opacity: 1;
-    }
-  
-    100% {
-      width: 240px;
-      opacity: 1;
-    }
-  }
-  
-  .lineDown {
-    animation-name: lineDownAni;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 6s;
-    box-shadow: 0px 0px 7px #000000, 0px 0px 30px #ffffff71;
-  }
-  
-  @keyframes lineDownAni {
-    0% {
-      width: 0px;
-      opacity: 1;
-    }
-  
-    100% {
-      width: 240px;
-      opacity: 1;
-    }
-  }
+}
 
   /* MENU NAV */
 
@@ -336,48 +63,73 @@
     display: grid;
     grid-column-start: 2;
     grid-row-start: 3;
-    opacity: 0;
-    animation-name: navAni;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 7s;
     grid-template-columns: 240px;
     grid-template-rows: auto 30px 30px 30px 30px auto;
-  }
-  
-  @keyframes navAni {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-  
+  }  
+
   .abouteMe {
     grid-column-start: 1;
     grid-row-start: 2;
+    opacity: 0;
+    animation-name: aboutAni;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes aboutAni {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
   }
   
   .skills {
     grid-column-start: 1;
     grid-row-start: 3;
+    opacity: 0;
+    animation-name: skillsAni;
+    animation-duration: 1.5s;
+    animation-delay: 3.4s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes skillsAni {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
   }
   
   .myWorks {
     grid-column-start: 1;
     grid-row-start: 4;
+    opacity: 0;
+    animation-name: worksAni;
+    animation-duration: 1.5s;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes worksAni {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
   }
   
   .contact {
     grid-column-start: 1;
     grid-row-start: 5;
+    opacity: 0;
+    animation-name: contactAni;
+    animation-duration: 1.5s;
+    animation-delay: 4.2s;
+    animation-fill-mode: forwards;
   }
   
+  @keyframes contactAni {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
   .menuItem {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: 1s;
@@ -389,7 +141,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 0px 0px 3px #000000;
+    text-shadow: 0px -1px 8px #000000;
   }
   
   .mainMenuConteiner {

@@ -1,6 +1,10 @@
 
 /* - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - */
 
+footer{
+  height: 65px;
+}
+
 .footerIconsContainer {
     display: inline;
     width: 180px;
@@ -15,9 +19,9 @@
   }
   
   .footerIcom {
-    height: 20px;
+    height: 18px;
   
     &:hover {
-      filter: drop-shadow(0px 0px 5px #8df33a);
+      filter: drop-shadow(0px 0px 5px #a8a8a8);
     }
   }
