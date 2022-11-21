@@ -4,6 +4,9 @@
 .masterBoxIndex {
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    grid-template-rows: auto 100px 180px auto;
   }
 
 .indexTitle{
@@ -13,7 +16,7 @@
 .intro {
   grid-column-start: 2;
   grid-row-start: 2;
-  font-size: 20em;
+  font-size: 21em;
   font-family: K2D;
   letter-spacing: 0.02em;
   width: 100%;
@@ -40,7 +43,7 @@
     filter: blur(4px);
   }
   25% {
-    stroke-width: 2px;
+    stroke-width: 1px;
   }
   50% {
     fill-opacity: 0;
@@ -48,7 +51,7 @@
     filter: blur(0px);
   }
   75% {
-    stroke-width: 2px;
+    stroke-width: 1px;
   }
   100% {
     stroke-width: 0;
@@ -64,7 +67,13 @@
     grid-column-start: 2;
     grid-row-start: 3;
     grid-template-columns: 240px;
-    grid-template-rows: auto 30px 30px 30px 30px auto;
+    grid-template-rows: auto 40px 40px 40px 40px auto;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }  
 
   .abouteMe {
@@ -129,7 +138,7 @@
 
   .menuItem {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: 1s;
