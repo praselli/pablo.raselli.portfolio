@@ -166,6 +166,7 @@
   }
 
   .photoFrame{
+      display: block;
       width: 22em;
       grid-column-start: 2;
       grid-row: 1 / 3;
